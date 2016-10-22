@@ -29,7 +29,7 @@ void draw() {
 
   // Change the coordinates
   posX = 150;
-  posY += fallingSpeed;
+  posY = 50;
 
   //Draw a little black circle with coordinates (posX,posY)
   fill(0);
@@ -42,8 +42,8 @@ void draw() {
  1. Read and run the code, then change the values 
     for posX and posY until you understand what they do.
 
- 2. Change in the code:
-    posY = posY + 1;
+ 2. Change the y-coordinate with the line:
+    posY = posY + fallingSpeed;
     
  3. Change the falling speed to a bigger number that makes 
     the game hard enough. 
@@ -52,7 +52,7 @@ void draw() {
     have to put it at the top again when it has fallen too 
     far down.
     
-    Put this code inside draw:
+    Put this code inside draw loop:
     // if the (statement) is true..
     if( posY > 300 ){ 
       // ..the code inside will run, otherwise not
@@ -83,7 +83,7 @@ Challange: Change the background color if we are too close
              || means "or" and && means "and". We can also 
              put an if inside another if.
            
-           * Count and display points. Google is your friend.
+           Make the falling speed change over time
              
              
             

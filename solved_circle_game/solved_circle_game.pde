@@ -26,20 +26,20 @@ void draw() {
   {
     if(posX < mouseX+40  &&  mouseX < posX+40)
     {
-       background(40);
+       background(20);
     }
   }
   //or you could write all in the same if
   //if(posY > 210  &&  posX < mouseX+40  &&  mouseX < posX+40)
-  //{ background(40); }
+  //{ background(20); }
   
   //Draw the white circle in the bottom
   fill(255);
   ellipse(mouseX, 250, 55, 55); 
   
   // Change the coordinates
-  //posX = 150;
-  posY += fallingSpeed;
+  //posX = 150;  //has to be removed or commented
+  posY = posY + fallingSpeed;
   
   // if the (statement) is true..
   if( posY > 300 ){ 
@@ -61,7 +61,7 @@ void draw() {
     for posX and posY until you understand what they do.
 
  2. Change in the code:
-    posY = posY + 1;
+    posY = posY + fallingSpeed;
     
  3. Change the falling speed to a bigger number that makes 
     the game hard enough. 
@@ -101,8 +101,7 @@ Challange: Change the background color if we are too close
              || means "or" and && means "and". We can also 
              put an if inside another if.
              
-           * Count and display points. Google is your friend.
+           Make the falling speed change over time
              
-            
 *************************************/
      
