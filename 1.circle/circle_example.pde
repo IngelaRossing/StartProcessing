@@ -12,7 +12,7 @@ void setup() {
 } 
 
 // Draw will run over and over again
-// Here we tell what will be drawn in every frame
+// Here we tell what will be drawn in the next frame
 void draw() {
   //call function for drawing an ellipse
   ellipse(100, 75, 55, 55);
